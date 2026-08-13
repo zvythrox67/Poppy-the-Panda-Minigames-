@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cdcpi6oc4dvj1"]
+
+[ext_resource type="Texture2D" uid="uid://b26jjf2ip1uno" path="res://Images/titlescreen.jpeg" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://8mx0vlova55y" path="res://Images/Button-titlescreen.png" id="2_4gxqj"]
+
+[node name="TitleScreen" type="Node2D" unique_id=207006368]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1368540304]
+offset_left = 263.0
+offset_top = -1.0
+offset_right = 866.0
+offset_bottom = 648.0
+texture = ExtResource("1_p3fck")
+
+[node name="Title" type="RichTextLabel" parent="Background" unique_id=1145102897]
+clip_contents = false
+layout_mode = 0
+offset_left = 313.0
+offset_top = 218.0
+offset_right = 613.0
+offset_bottom = 299.0
+theme_override_colors/font_outline_color = Color(0.5294118, 0, 0.7019608, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/normal_font_size = 45
+theme_override_font_sizes/bold_font_size = 19
+theme_override_font_sizes/mono_font_size = 19
+text = "Planet 1738
+"
+
+[node name="ButtonContainer" type="VBoxContainer" parent="Background" unique_id=1818272017]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 358.0
+offset_right = 562.0
+offset_bottom = 542.0
+
+[node name="Start" type="Button" parent="Background/ButtonContainer" unique_id=1920101600]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.13333334, 0.14117648, 1)
+theme_override_font_sizes/font_size = 22
+text = "Start"
+icon = ExtResource("2_4gxqj")
+icon_alignment = 1
+
+[node name="Settings" type="Button" parent="Background/ButtonContainer" unique_id=1140081482]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.13333334, 0.14117648, 1)
+theme_override_font_sizes/font_size = 22
+text = "Settings"
+icon = ExtResource("2_4gxqj")
+icon_alignment = 1
+
+[node name="Quit" type="Button" parent="Background/ButtonContainer" unique_id=1134776653]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.13333334, 0.14117648, 1)
+theme_override_font_sizes/font_size = 22
+text = "Quit"
+icon = ExtResource("2_4gxqj")
+icon_alignment = 1
