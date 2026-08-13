@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dat5k47tops8v"]
+
+[ext_resource type="Texture2D" uid="uid://b1kwycclfmfpx" path="res://Images/startscreen1.jpeg" id="1_i8r30"]
+
+[node name="StartScreen" type="Node2D" unique_id=1850378889]
+
+[node name="Background" type="TextureRect" parent="." unique_id=277315001]
+offset_left = 337.0
+offset_top = -851.0
+offset_right = 837.0
+offset_bottom = 649.0
+texture = ExtResource("1_i8r30")
+stretch_mode = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=956353603]
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://cdcpi6oc4dvj1"]
 
+[ext_resource type="Script" uid="uid://c383i28crx3ri" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://b26jjf2ip1uno" path="res://Images/titlescreen.jpeg" id="1_p3fck"]
 [ext_resource type="Texture2D" uid="uid://8mx0vlova55y" path="res://Images/Button-titlescreen.png" id="2_4gxqj"]
 
 [node name="TitleScreen" type="Node2D" unique_id=207006368]
+script = ExtResource("1_4gxqj")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1368540304]
 offset_left = 263.0
@@ -57,3 +59,6 @@ theme_override_font_sizes/font_size = 22
 text = "Quit"
 icon = ExtResource("2_4gxqj")
 icon_alignment = 1
+
+[connection signal="pressed" from="Background/ButtonContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Background/ButtonContainer/Quit" to="." method="_on_quit_pressed"]
