@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://crcxxbfjt6i7h"]
 
-[ext_resource type="Texture2D" uid="uid://dvugcx004xhxb" path="res://Images/levelscreen.jpeg" id="1_mdr7d"]
-[ext_resource type="Texture2D" uid="uid://c5obqywag4677" path="res://Images/level3.jpeg" id="2_taw6s"]
-[ext_resource type="Texture2D" uid="uid://bb3hkgo2tsici" path="res://Images/level1.jpeg" id="3_jv1jy"]
-[ext_resource type="Texture2D" uid="uid://bidl1xhtr1q7f" path="res://Images/level2.jpeg" id="4_yvi24"]
-[ext_resource type="Texture2D" uid="uid://bbrqksisn0j7n" path="res://Images/level5.jpeg" id="5_pandp"]
-[ext_resource type="Texture2D" uid="uid://1cim81kw0xsh" path="res://Images/level4.jpeg" id="6_0yp81"]
+[ext_resource type="Texture2D" uid="uid://b03b5ydxpbh2r" path="res://Images/levelscreen.jpeg" id="1_mdr7d"]
+[ext_resource type="Texture2D" uid="uid://dxws0ghl1t06y" path="res://Images/level.png" id="2_6yjli"]
 
 [node name="LevelScreen" type="Node2D" unique_id=657057034]
 
@@ -17,40 +13,41 @@ texture = ExtResource("1_mdr7d")
 
 [node name="LevelsContainer" type="HBoxContainer" parent="Background" unique_id=2085629277]
 layout_mode = 0
-offset_left = 84.0
-offset_top = 283.0
-offset_right = 569.0
-offset_bottom = 486.0
+offset_left = 61.0
+offset_top = 144.0
+offset_right = 699.0
+offset_bottom = 280.0
 
 [node name="Level1" type="TextureRect" parent="Background/LevelsContainer" unique_id=1056894671]
 layout_mode = 2
-texture = ExtResource("2_taw6s")
+texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="Level2" type="TextureRect" parent="Background/LevelsContainer" unique_id=448292468]
 layout_mode = 2
-texture = ExtResource("3_jv1jy")
+texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="Level3" type="TextureRect" parent="Background/LevelsContainer" unique_id=1486705459]
 layout_mode = 2
-texture = ExtResource("4_yvi24")
+texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="Level4" type="TextureRect" parent="Background/LevelsContainer" unique_id=523715886]
 layout_mode = 2
-texture = ExtResource("5_pandp")
+texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="Level5" type="TextureRect" parent="Background/LevelsContainer" unique_id=527035231]
 layout_mode = 2
-texture = ExtResource("6_0yp81")
+texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="TimerText" type="RichTextLabel" parent="." unique_id=2092629912]
-offset_left = 821.0
-offset_top = 601.0
-offset_right = 861.0
-offset_bottom = 637.0
-theme_override_font_sizes/normal_font_size = 22
+offset_left = 541.0
+offset_top = 74.0
+offset_right = 616.0
+offset_bottom = 110.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 26
 text = "5.0"
