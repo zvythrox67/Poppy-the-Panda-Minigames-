@@ -1,3 +1,50 @@
 [gd_scene format=3 uid="uid://cilld3am8uoi3"]
 
-[node name="game_over" type="Node2D" unique_id=1612195622]
+[ext_resource type="Texture2D" uid="uid://casg3mpwngqus" path="res://Images/Game1_Loss.jpeg" id="1_8fo1c"]
+[ext_resource type="Script" uid="uid://i4m5q8h7hqql" path="res://Scenes/game_over.gd" id="1_ek8ke"]
+[ext_resource type="Texture2D" uid="uid://d4ewm36jpefrq" path="res://Images/Button2.png" id="2_ek8ke"]
+
+[node name="game_over1" type="Node2D" unique_id=1612195622]
+script = ExtResource("1_ek8ke")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1229559809]
+offset_left = 255.0
+offset_top = -1.0
+offset_right = 917.0
+offset_bottom = 647.0
+texture = ExtResource("1_8fo1c")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect" unique_id=538211457]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 50.0
+offset_right = 496.0
+offset_bottom = 130.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "LOST...."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1571052020]
+offset_left = 439.0
+offset_top = 390.0
+offset_right = 691.0
+offset_bottom = 598.0
+
+[node name="tryagain" type="Button" parent="VBoxContainer" unique_id=708594304]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7294118, 0.078431375, 0.2627451, 1)
+theme_override_font_sizes/font_size = 23
+text = "Try Again"
+icon = ExtResource("2_ek8ke")
+icon_alignment = 1
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=247195166]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7294118, 0.078431375, 0.2627451, 1)
+theme_override_font_sizes/font_size = 24
+text = "Quit
+"
+icon = ExtResource("2_ek8ke")
+icon_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/tryagain" to="." method="_on_tryagain_pressed"]

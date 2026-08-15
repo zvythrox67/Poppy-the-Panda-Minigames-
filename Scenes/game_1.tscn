@@ -2,15 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://cvrt5nm23a46b" path="res://Images/CactusGame.jpeg" id="1_o8rjv"]
 [ext_resource type="Script" uid="uid://rxouwkgs2n36" path="res://Scenes/game_1.gd" id="1_oux1a"]
+[ext_resource type="Texture2D" uid="uid://p8bbgvs347uk" path="res://Images/thorn.png" id="3_syfnt"]
 
 [node name="Game1" type="Node2D" unique_id=485343570]
 script = ExtResource("1_oux1a")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1042973689]
-offset_left = 264.0
-offset_top = 64.0
-offset_right = 877.0
-offset_bottom = 702.0
+offset_left = 257.0
+offset_top = 1.0
+offset_right = 870.0
+offset_bottom = 647.0
 texture = ExtResource("1_o8rjv")
 
 [node name="TimerText" type="RichTextLabel" parent="Background" unique_id=1885734681]
@@ -18,8 +19,9 @@ layout_mode = 0
 offset_left = 24.0
 offset_right = 200.0
 offset_bottom = 103.0
+mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 50
-text = "10"
+text = "7.0"
 
 [node name="LivesText" type="RichTextLabel" parent="Background" unique_id=1742189429]
 layout_mode = 0
@@ -27,6 +29,7 @@ offset_left = 492.0
 offset_top = 1.0
 offset_right = 700.0
 offset_bottom = 122.0
+mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 35
 text = "5 lives"
 
@@ -36,6 +39,7 @@ offset_left = 42.0
 offset_top = 599.0
 offset_right = 568.0
 offset_bottom = 793.0
+mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 32
 text = "Remove the Thorns off the Cactus"
 
@@ -44,30 +48,28 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn1" unique_id=1755123646]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn1" unique_id=505385163]
 layout_mode = 0
-offset_left = 368.0
-offset_top = 173.0
-offset_right = 426.65527
-offset_bottom = 178.95215
-rotation = -0.4649694
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 369.22833
+offset_top = 119.93106
+offset_right = 448.22833
+offset_bottom = 127.72351
+rotation = -0.39683953
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn2" type="TextureButton" parent="Background" unique_id=44105772]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn2" unique_id=1577118340]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn2" unique_id=739637783]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 363.00003
-offset_right = 225.65527
-offset_bottom = 368.95218
-rotation = -0.4649694
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 137.0
+offset_top = 252.0
+offset_right = 216.0
+offset_bottom = 259.73404
+rotation = -0.19241224
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn3" type="TextureButton" parent="Background" unique_id=1624936126]
 layout_mode = 0
@@ -76,15 +78,14 @@ offset_top = -124.0
 offset_right = 37.0
 offset_bottom = -84.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn3" unique_id=357922249]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn3" unique_id=327140188]
 layout_mode = 0
-offset_left = 174.0
-offset_top = 291.0
-offset_right = 232.65527
-offset_bottom = 296.95215
-rotation = 0.5497732
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 498.0
+offset_top = 437.0
+offset_right = 577.0
+offset_bottom = 444.76965
+rotation = -0.6480648
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn4" type="TextureButton" parent="Background" unique_id=1828451470]
 layout_mode = 0
@@ -93,15 +94,14 @@ offset_top = -58.0
 offset_right = 240.0
 offset_bottom = -18.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn4" unique_id=1001157546]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn4" unique_id=1154357404]
 layout_mode = 0
-offset_left = 174.0
-offset_top = 291.0
-offset_right = 232.65527
-offset_bottom = 296.95215
-rotation = -0.12269038
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = -110.0
+offset_top = 453.0
+offset_right = -31.0
+offset_bottom = 462.3144
+rotation = -1.0577486
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn5" type="TextureButton" parent="Background" unique_id=1103772344]
 layout_mode = 0
@@ -110,15 +110,14 @@ offset_top = -112.0
 offset_right = 142.0
 offset_bottom = -72.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn5" unique_id=1067306819]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn5" unique_id=464864905]
 layout_mode = 0
-offset_left = 157.0
-offset_top = 238.0
-offset_right = 215.65527
-offset_bottom = 243.95215
-rotation = 1.3826749
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 240.0
+offset_top = 337.0
+offset_right = 319.0
+offset_bottom = 343.0
+rotation = -0.17831382
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn6" type="TextureButton" parent="Background" unique_id=74460050]
 layout_mode = 0
@@ -127,15 +126,14 @@ offset_top = -17.0
 offset_right = 184.0
 offset_bottom = 23.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn6" unique_id=1130992451]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn6" unique_id=112393033]
 layout_mode = 0
-offset_left = 184.0
-offset_top = 224.00003
-offset_right = 242.65527
-offset_bottom = 229.95218
-rotation = 1.8075728
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 32.0
+offset_top = 416.00003
+offset_right = 111.0
+offset_bottom = 422.00003
+rotation = -0.5896755
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn7" type="TextureButton" parent="Background" unique_id=1676275048]
 layout_mode = 0
@@ -144,15 +142,14 @@ offset_top = -21.0
 offset_right = 364.0
 offset_bottom = 19.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn7" unique_id=121009116]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn7" unique_id=2016162721]
 layout_mode = 0
-offset_left = 210.0
-offset_top = 329.0
-offset_right = 268.65527
-offset_bottom = 334.95215
-rotation = 2.4846377
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 34.859688
+offset_top = 490.54495
+offset_right = 113.85969
+offset_bottom = 497.8211
+rotation = 0.31121883
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn8" type="TextureButton" parent="Background" unique_id=1133793885]
 layout_mode = 0
@@ -161,48 +158,56 @@ offset_top = 20.0
 offset_right = 195.0
 offset_bottom = 60.0
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn8" unique_id=744284801]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn8" unique_id=105724835]
 layout_mode = 0
-offset_left = 210.0
-offset_top = 329.0
-offset_right = 268.65527
-offset_bottom = 334.95215
-rotation = 2.4846377
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 174.0
+offset_top = 304.0
+offset_right = 294.64398
+offset_bottom = 310.5669
+rotation = -0.553317
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn9" type="TextureButton" parent="Background" unique_id=1468741745]
 layout_mode = 0
-offset_left = -99.0
-offset_top = -47.0
-offset_right = -59.0
-offset_bottom = -7.0
-rotation = -0.003422005
+offset_left = -102.0
+offset_top = 4.0
+offset_right = -62.0
+offset_bottom = 44.0
+rotation = -0.05639852
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn9" unique_id=33456874]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn9" unique_id=30977963]
 layout_mode = 0
-offset_left = 210.0
-offset_top = 329.0
-offset_right = 268.65527
-offset_bottom = 334.95215
-rotation = 2.0540378
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 261.6202
+offset_top = 528.5876
+offset_right = 340.6202
+offset_bottom = 535.9441
+rotation = -0.06140582
+texture = ExtResource("3_syfnt")
 
 [node name="Thorn10" type="TextureButton" parent="Background" unique_id=235448174]
 layout_mode = 0
-offset_left = 46.0
-offset_top = 128.0
-offset_right = 86.0
-offset_bottom = 168.0
+offset_left = 38.0
+offset_top = 133.00002
+offset_right = 78.0
+offset_bottom = 173.00002
 rotation = -0.003422005
 
-[node name="ColorRect" type="ColorRect" parent="Background/Thorn10" unique_id=2051926001]
+[node name="TextureRect" type="TextureRect" parent="Background/Thorn10" unique_id=1544366047]
 layout_mode = 0
-offset_left = 210.0
-offset_top = 329.0
-offset_right = 268.65527
-offset_bottom = 334.95215
-rotation = 2.0540378
-color = Color(0, 0, 0, 1)
-metadata/_edit_group_ = true
+offset_left = 414.64136
+offset_top = 255.42572
+offset_right = 493.64136
+offset_bottom = 261.6396
+rotation = 0.46288586
+texture = ExtResource("3_syfnt")
+
+[connection signal="pressed" from="Background/Thorn1" to="." method="_on_thorn_1_pressed"]
+[connection signal="pressed" from="Background/Thorn2" to="." method="_on_thorn_2_pressed"]
+[connection signal="pressed" from="Background/Thorn3" to="." method="_on_thorn_3_pressed"]
+[connection signal="pressed" from="Background/Thorn4" to="." method="_on_thorn_4_pressed"]
+[connection signal="pressed" from="Background/Thorn5" to="." method="_on_thorn_5_pressed"]
+[connection signal="pressed" from="Background/Thorn6" to="." method="_on_thorn_6_pressed"]
+[connection signal="pressed" from="Background/Thorn7" to="." method="_on_thorn_7_pressed"]
+[connection signal="pressed" from="Background/Thorn8" to="." method="_on_thorn_8_pressed"]
+[connection signal="pressed" from="Background/Thorn9" to="." method="_on_thorn_9_pressed"]
+[connection signal="pressed" from="Background/Thorn10" to="." method="_on_thorn_10_pressed"]
