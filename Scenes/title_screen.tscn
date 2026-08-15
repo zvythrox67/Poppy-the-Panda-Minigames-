@@ -60,3 +60,5 @@ icon = ExtResource("3_4gxqj")
 icon_alignment = 1
 
 [connection signal="pressed" from="Background/ButtonContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Background/ButtonContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Background/ButtonContainer/Quit" to="." method="_on_quit_pressed"]
