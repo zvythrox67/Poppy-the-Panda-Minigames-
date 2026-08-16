@@ -3,7 +3,7 @@ extends Node2D
 @onready var timer_text = $Background/TimerText
 @onready var lives_text = $Background/LivesText
 
-var time_left = 10.0
+var time_left = 15.0
 var thorns_removed = 0
 var total_thorns = 10
 var timer_running = true
