@@ -36,6 +36,7 @@ theme_override_colors/font_color = Color(0.7294118, 0.078431375, 0.2627451, 1)
 theme_override_font_sizes/font_size = 23
 text = "Try Again"
 icon = ExtResource("2_ek8ke")
+flat = true
 icon_alignment = 1
 
 [node name="quit" type="Button" parent="VBoxContainer" unique_id=247195166]
@@ -45,6 +46,7 @@ theme_override_font_sizes/font_size = 24
 text = "Quit
 "
 icon = ExtResource("2_ek8ke")
+flat = true
 icon_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/tryagain" to="." method="_on_tryagain_pressed"]

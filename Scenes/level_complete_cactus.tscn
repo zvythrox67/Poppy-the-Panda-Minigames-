@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c42e7uvxsykny"]
+
+[ext_resource type="Texture2D" uid="uid://3dqtjsayewap" path="res://Images/yay-cactus.jpeg" id="1_oy5ub"]
+[ext_resource type="Script" uid="uid://dmi04twolr1q7" path="res://Scenes/level_complete_cactus.gd" id="1_p8rcu"]
+
+[node name="level_complete-cactus" type="Node2D" unique_id=902154592]
+script = ExtResource("1_p8rcu")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=905777145]
+offset_left = 248.0
+offset_top = 3.0
+offset_right = 890.0
+offset_bottom = 644.0
+texture = ExtResource("1_oy5ub")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1454960968]
+offset_left = 384.0
+offset_top = 529.0
+offset_right = 769.0
+offset_bottom = 634.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Game 1 Complete!"

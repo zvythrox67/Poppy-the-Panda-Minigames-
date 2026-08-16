@@ -16,7 +16,6 @@ func _ready():
 		if thorn_node:
 			thorn_node.pressed.connect(_on_thorn_pressed.bind(thorn_node))
 			
-	print("All 10 thorns connected dynamically!")
 	countdown()
 
 func update_lives():
@@ -33,7 +32,7 @@ func countdown():
 		if Global.lives <= 0:
 			get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
 		else:
-			get_tree().change_scene_to_file("res://Scenes/game_1.tscn")
+			get_tree().change_scene_to_file("res://Scenes/level_screen.tscn")
 
 func _on_thorn_pressed(thorn: TextureButton):
 	if not timer_running or not thorn.visible:
@@ -51,4 +50,4 @@ func _on_thorn_pressed(thorn: TextureButton):
 		await get_tree().create_timer(1.0).timeout
 		
 		Global.minigames_done += 1
-		get_tree().change_scene_to_file("res://Scenes/level_screen.tscn")
+		get_tree().change_scene_to_file("res://Scenes/level_complete_cactus.tscn")

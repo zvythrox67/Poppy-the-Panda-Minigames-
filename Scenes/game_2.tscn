@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b67jo8nn18783"]
+
+[ext_resource type="Texture2D" uid="uid://dt0vjqijx4wh2" path="res://Images/game2.jpeg" id="1_fyfmi"]
+[ext_resource type="Texture2D" uid="uid://crknbivh7puw6" path="res://Images/panda1.png" id="2_pl37j"]
+
+[node name="game_2" type="Node2D" unique_id=363523028]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1293626334]
+offset_left = 252.0
+offset_top = -1.0
+offset_right = 887.0
+offset_bottom = 648.0
+texture = ExtResource("1_fyfmi")
+
+[node name="TimerText" type="RichTextLabel" parent="Background" unique_id=1890835490]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 158.0
+offset_bottom = 57.0
+theme_override_colors/default_color = Color(0.100000024, 0.53499985, 1, 1)
+theme_override_font_sizes/normal_font_size = 29
+text = "15.0"
+
+[node name="LivesText" type="RichTextLabel" parent="Background" unique_id=1800507556]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 18.0
+offset_right = 658.0
+offset_bottom = 58.0
+theme_override_colors/default_color = Color(0.101960786, 0.53333336, 1, 1)
+theme_override_font_sizes/normal_font_size = 29
+text = "5 Lives"
+
+[node name="FinishLine" type="TextureRect" parent="Background" unique_id=467030444]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 291.0
+offset_right = 660.0
+offset_bottom = 362.0
+
+[node name="PandaRest" type="TextureRect" parent="Background" unique_id=1588370590]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 269.0
+offset_right = 97.0
+offset_bottom = 367.0
+texture = ExtResource("2_pl37j")
+expand_mode = 1
+
+[node name="Instructions" type="RichTextLabel" parent="Background" unique_id=177607859]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 594.0
+offset_right = 591.0
+offset_bottom = 651.0
+theme_override_font_sizes/normal_font_size = 32
+text = "Click to help Poppy Swim to ground
+"
